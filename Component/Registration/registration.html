@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:ital,wght@1,100;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url(/Component/Images/Bacjground.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .reg-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid whitesmoke;
+            box-shadow: 0 0 10px whitesmoke;
+            backdrop-filter: blur(50px);
+            border-radius: 15px;
+            height: 560px;
+            width: 650px;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .input-field {
+            border: 2px solid #07596d;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            color: white;
+            background-color: #07596d;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 70px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="reg-form">
+        <h1 style="text-align:center; color: white;">Registration</h1>
+        <div style="display: flex;">
+            <div style="padding-left: 20px;">
+                <label for="fullname" class="text">Full Name:* </label><br />
+                <input type="text" name="firstname" id="firstname" class="input-field" required /> <br>
+
+                <label for="email" class="text">E-mail:* </label><br />
+                <input type="email" name="email" id="email" class="input-field" required /> <br>
+
+                <label for="password" class="text">Password:* </label><br />
+                <input type="password" name="password" id="password" class="input-field" required /> <br>
+
+                <label for="dob" class="text">Date of Birth:* </label> <br />
+                <input type="date" name="dob" id="dob" class="input-field" required /> <br>
+
+                <label for="cpp" class="text">Choose Profile Photo: </label><br />
+                <input type="file" name="cpp" id="cpp" class="input-field" /> <br>
+
+            </div>
+            <div style="padding-right: 20px; text-align: right; margin-left: auto;">
+                <label for="username" class="text">Username:*</label><br />
+                <input type="text" name="uname" id="uname" class="input-field" required /> <br>
+
+                <label for="contact" class="text">Contact No:* </label> <br>
+                <input type="tel" name="mobile-number" id="mobile-number" class="input-field" required /> <br>
+
+                <label for="password" class="text">Confirm Password:* </label> <br>
+                <input type="password" name="password" id="password" class="input-field" required /> <br>
+
+                <label for="gender" class="text">Gender: </label><br />
+                <input type="radio" name="gender" id="gender" value="Male" class="text" /><span
+                    style="color: white;">Male</span>
+                <input type="radio" name="gender" id="gender" value="Female" class="text" /><span
+                    style="color: white;">Female</span>
+                <input type="radio" name="gender" id="gender" value="Custom" class="text" /><span
+                    style="color: white;">Custom</span> <br>
+
+                <label for="dept" class="text">Department: </label><br />
+                <select name="dept" id="dept" class="input-field">
+                    <option value="CSE"><span style="font-weight: bold; font-size: 20px; color: black;">CSE</span>
+                    </option>
+                    <option value="EEE">EEE</option>
+                    <option value="CE">CE</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                </select> <br>
+            </div>
+        </div>
+        <div style="display: flex; margin-top: 40px;">
+            <button class="btn" style="margin-left: auto; margin-right: 20px;">Register</button> <br>
+            <button class="btn" style="margin-right: auto; margin-left: 20px;" type="reset">
+                Reset
+            </button>
+        </div>
+        <p style="font-weight: bold; text-align: center">
+            [If you have already done your registration, then
+            <a href="/Component/Login/login.html">click here.]</a>
+        </p>
+    </form>
+</body>
+
+</html>
